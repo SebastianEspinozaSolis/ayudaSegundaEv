@@ -56,3 +56,12 @@ dentro de esta carpeta crear un archivo html por cada view que se hizo, aqui es 
 por ejemplo, inicio solo era inicio.html por lo que ese se crea
 
 en el caso de ahora es solo de prueba, se puede copiar o usar algun otro, ahora con el resto de apps
+
+
+ahora hace falta configurar las urls para que funcione correctamente todo, para ello en cada app hay que crear un archivo urls.py
+para inicio se puede usar de ejemplo para el resto en que appname sera el nombre de la app, al igual que luego del views.   y en name el nombre que tendra
+y mas importante, para encontrar la url en path se agrega, en inicio nada para que sea defecto pero si no usar nombre de 'vista/'
+
+se puede usar de ejemplo los urls de cada app que quedo, y ahora mas importante, configuracion de url del proyecto principal
+
+se puede usar de ejmplo el que esta en url de proyecto pero para explicar, añadir include, al lado de path ir colocando como se vera la url raiz, en este caso inicio sera donde iniciara por lo que '', pero los demas como nombre de app, y al abrir cada vista abrira app/vista/
