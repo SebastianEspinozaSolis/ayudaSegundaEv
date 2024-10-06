@@ -21,3 +21,23 @@ para el ejemplo de multiples apps se agrega otra app y un inicio, inicio suele s
 # python manage.py startapp inicio
 
 asi que luego hay que añadir a settings y se puede continuar con creacion de las views
+
+ahora para la views, se puede comenzar de inicio la cual sera lo primero que se abrira al iniciar la app
+
+y para crear una vista se crea una funcion con:
+# def inicio(request):
+#   return render(request, 'inicio/inicio.html')
+esta funcion ira cambiando, primero al lado de def ira el nombre de la vista para luego usarlo en url,
+y luego de request, ira 'nombre de app por la carpeta que tendra templates/nombre del archivo html que se quiere mostrar en la vista'
+
+y esto mismo se puede hacer con las demas app, con la 1 y 2 haciendo 2 vista por cada una, cambiando solo nombre de vista y ruta de html
+app 1
+# def vista1_app1(request):
+#   return render(request, 'app1/vista1_app1.html')
+# def vista2_app1(request):
+#   return render(request, 'app1/vista2_app1.html')
+app 2
+# def vista1_app2(request):
+#   return render(request, 'app2/vista1_app2.html')
+# def vista2_app2(request):
+#   return render(request, 'app2/vista2_app2.html')
