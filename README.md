@@ -15,3 +15,9 @@ y luego dentro de templates y en DIRS: [], dentro de [] agregar
 
 con eso realizado hay que continuar bajando, hasta static_url y agregar lo siguiente
 #STATICFILES_DIR = [os.path.join(BASE_DIR, 'static')]
+
+para el ejemplo de multiples apps se agrega otra app y un inicio, inicio suele ser donde comienza la web
+# python manage.py startapp app2
+# python manage.py startapp inicio
+
+asi que luego hay que añadir a settings y se puede continuar con creacion de las views
