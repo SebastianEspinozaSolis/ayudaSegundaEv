@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>{% block title %}Mi Proyecto{% endblock %}</title>
+ {% load static %}
+ <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+ <!-- Menú de navegación -->
+Django Templates 5
+ <nav>
+ <ul>
+ <li><a href="{% url 'inicio:inicio' %}">Inicio</a></li>
+ <li><a href="{% url 'app1:vista1_app1' %}">Vista 1 App1</a></li>
+ <li><a href="{% url 'app1:vista2_app1' %}">Vista 2 App1</a></li>
+ <li><a href="{% url 'app2:vista1_app2' %}">Vista 1 App2</a></li>
+ <li><a href="{% url 'app2:vista2_app2' %}">Vista 2 App2</a></li>
+ </ul>
+ </nav>
+ <!-- Contenido específico de cada página -->
+ {% block content %}
+ {% endblock %}
+ <!-- Pie de página -->
+ <footer>
+ <p>&copy; 2023 Mi Proyecto</p>
+ </footer>
+</body>
+</html>

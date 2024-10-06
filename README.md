@@ -41,3 +41,18 @@ app 2
 #   return render(request, 'app2/vista1_app2.html')
 # def vista2_app2(request):
 #   return render(request, 'app2/vista2_app2.html')
+
+
+ahora hay que crear la carpeta templates, a altura de directorio, misma altura que readme
+
+dentro de este añadir un base.html
+se puede copiar el base.html de este proyecto, pero hay que recordar adaptar por las apps y carpetas que usa el proyecto nuevo diferente a este
+
+luego de eso hay que crear cada template en cada carpeta de app que haya
+el orden de creacion es en inicio por ejemplo:
+inicio/templates/inicio
+crear templates dentro de la app y dentro de templates crear una carpeta con el nombre de la app
+dentro de esta carpeta crear un archivo html por cada view que se hizo, aqui es donde iran las views de antes
+por ejemplo, inicio solo era inicio.html por lo que ese se crea
+
+en el caso de ahora es solo de prueba, se puede copiar o usar algun otro, ahora con el resto de apps
