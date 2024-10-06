@@ -65,3 +65,6 @@ y mas importante, para encontrar la url en path se agrega, en inicio nada para q
 se puede usar de ejemplo los urls de cada app que quedo, y ahora mas importante, configuracion de url del proyecto principal
 
 se puede usar de ejmplo el que esta en url de proyecto pero para explicar, añadir include, al lado de path ir colocando como se vera la url raiz, en este caso inicio sera donde iniciara por lo que '', pero los demas como nombre de app, y al abrir cada vista abrira app/vista/
+
+y ahora hay que crear la carpeta static para dejar imagenes, css o los scripts de js
+para ello es una carpeta static a nivel de readme, dentro 3 carpetas, css, js y images, y dentro de css suele ir el css de este proyecto, que lleva todo de boostrap
